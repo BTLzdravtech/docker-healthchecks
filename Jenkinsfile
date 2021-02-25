@@ -22,7 +22,7 @@ pipeline {
         stage('Lint') {
             steps {
                 script {
-                    sh 'hadolint --format json ./image/Dockerfile > hadolint.json'
+                    sh 'hadolint --format json Dockerfile > hadolint.json'
                 }
             }
         }
